@@ -1,0 +1,175 @@
+
+body {
+    font-family: "Courier New";
+    font-size: var(--font-size);
+    margin: 0;
+    background-color: rgb(41, 41, 41);
+}
+
+h1 {
+    background-color:rgb(32, 32, 32);
+    color: rgb(201, 201, 201);
+    position: static;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+}
+
+#prompt {
+    background-color:rgb(41, 41, 41);
+    color: rgb(88, 88, 88);
+    top: 80px;
+    position: static;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+
+}
+
+
+#high-scores {
+    width:80%;
+    text-align: center;
+    column-width: 30px;
+}
+
+
+#history_list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#myCanvas {
+    resize: none;
+}
+
+
+
+/* .snake {
+    background-color: hsla(138, 92%, 33%, 0.616);
+    border: .25vmin solid black;
+
+}
+
+.food {
+    background-color: hsl(0, 64%, 45%);
+    border: .25vmin solid black
+} */
+
+#start_game_button {
+    display: inline-block;
+    padding: 15px 25px;
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-family: "Courier New";
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+
+}
+
+#start_game_button:hover {
+    background-color: #3e8e41
+}
+
+#start_game_button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+
+.slider {
+    -webkit-appearance: none;
+    left: 90vmin;
+    width: 90%;
+    height:20px;
+    background: linear-gradient(90deg, rgb(214, 214, 214) 60%, rgb(214,214,214) 60%);
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: 0.2s;
+    transition: opacity 2s;
+    border-radius: 12px;
+    box-shadow: 0px 1px 10px 1px black;
+}
+
+.slider::-moz-range-thumb {
+    cursor: pointer;
+}
+
+.slider:hover {
+    opacity: 3;
+}
+
+
+.row{
+    align-items: center;
+    float: left;
+    background-color: rgb(41, 41, 41);
+    column-gap: 40px;
+}
+
+
+* {
+    box-sizing: border-box;
+    width: 100%;
+    top: 200px;
+    right: 0px;
+  }
+  
+  /* Create three columns that float next to each other */
+  .column1 {
+    float: left;
+    width: 600px;
+    height: 550px;
+    padding-left: 50px;
+    padding-right: 20px;
+  }
+  
+  .column2 {
+    float: left;
+    width: 28%;
+    height: 500px;
+    padding: 10px;
+    top: 200px;
+  }
+
+  .column3 {
+    float: left;
+    width: 28%;
+    height: 500px;
+    padding: 10px;
+    top: 200px;
+  }
+
+
+  .titleName {
+      position: relative;
+      margin-top:30px;
+      top: 10px;
+  }
+
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 900px) {
+    .column {
+        width: 90%;
+      }
+  }
